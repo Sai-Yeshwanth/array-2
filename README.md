@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
-
-public class Jala {
-
-	public static void main(String[] args) {
-		int arr[] = new int[100];
-		float sum=0;
-		Scanner input = new Scanner(System.in);
+class Add{
+	static int arr[] = new int[100];
+	static float sum=0;
+	static Scanner input = new Scanner(System.in);
+	public static void avg()
+	{
 		System.out.println("Enter size of array:");
 		int n = input.nextInt();
 		System.out.println("Enter "+ n +" elements of array");
@@ -21,5 +20,13 @@ public class Jala {
 			System.out.println(arr[i]);
 		}
 		System.out.println("Average is:" + sum/n);
+	}
+}
+
+public class Jala {
+
+	public static void main(String[] args) {
+		Add a = new Add();
+		a.avg();
 	}
 }
